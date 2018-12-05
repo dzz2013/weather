@@ -1,0 +1,28 @@
+{
+    "name": "xkeyi\/weather",
+    "description": "A weather SDK",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "xkeyi",
+            "email": "xkeyioo@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "phpunit/phpunit": "^7.4",
+        "mockery/mockery": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xkeyi\\Weather\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Xkeyi\\Weather\\ServiceProvider"
+            ]
+        }
+    }
+}
